@@ -1,0 +1,6 @@
+*.pyc
+*.jsonl
+*.out
+__pycache__/
+experiments/
+data/

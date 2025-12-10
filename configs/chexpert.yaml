@@ -1,0 +1,15 @@
+dataset:
+  name: chexpert
+  base_dir: /data/raw_data/chexpert/chexpertchestxrays-u20210408/CheXpert-v1.0
+  preprocessed: /home/yk3043@mc.cumc.columbia.edu/CXR-reason/gpt_processed_data.jsonl
+
+model:
+  name: chexagent #nv-reason
+
+prompt:
+  system: "You are an expert radiologist."
+
+metadata: "/data/raw_data/chexpert/chexpertplus/df_chexpert_plus_240401.csv"
+splits: "/home/pr2762@mc.cumc.columbia.edu/CXR_Attribution/splits/preprocessed_chexpert.csv"
+gt: "/home/vj2292@mc.cumc.columbia.edu/Radiologist_Survey/full_preprocessed.jsonl"
+batch_size: 64
